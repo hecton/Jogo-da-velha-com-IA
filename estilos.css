@@ -1,0 +1,113 @@
+body{
+	margin: 0;
+	background: lightblue;
+	font-family: helvetica;
+	text-align: center;
+}
+
+/*estilos do placar;*/
+#placar{
+	width: 95%;
+	margin: auto;
+}
+.placarbox{
+	width: 190px;
+	height: 40px;
+	background: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	font-size: 20px;
+	float: left;
+}
+.placarbox p{
+	margin: 8px;
+
+}
+#player2{
+	float: right;
+}
+
+/*caixa de informações*/
+#information{
+	width: 46%;
+	position: absolute;
+	left: 50%;
+	margin-left: -23%;
+}
+
+/*botão de finalizar a partida*/
+#btn_finish{
+	position: absolute;
+	left: 50%;
+	margin-left: -95px;
+	top: 60px;
+}
+
+#btn_finish:hover{
+	background: lightgreen;
+}
+
+/*estilos do menu*/
+#menu{
+	width: 200px;
+	background: white;
+	border: 2px solid black;
+	position: absolute;
+	right: 1px;
+	top: 30%;
+}
+#menu div{
+	width: 100%;
+	border-top: 2px solid black;
+	height: 30px;
+}
+#menu div p{
+	margin: 5px 0 0 0;
+	font-family: 17px;
+}
+#menu h2{
+	margin: 8px 0 8px 0;
+}
+#level1{
+	background: lightgreen;
+}
+#level2{
+	background: orange;
+}
+#level3{
+	background: red;
+}
+
+#menu div:hover{
+	font-size: 19px;
+}
+
+/*estilos do tabuleiro*/
+#tabuleiro{
+	width: 370px;
+	height: 370px;
+	background: black;
+	position: absolute;
+	left: 50%;
+	margin-left: -185px;
+	top: 20%;
+}
+#tabuleiro div{
+	width: 120px;
+	height: 120px;
+	background: white;
+	position: absolute;
+	font-size: 100px;
+}
+#tile2{left: 125px}
+#tile3{left: 250px}
+#tile4{top: 125px}
+#tile5{top: 125px; left: 125px}
+#tile6{top: 125px; left: 250px}
+#tile7{top: 250px;}
+#tile8{top: 250px; left: 125px}
+#tile9{top: 250px; left: 250px}
+
+#tabuleiro div:hover{
+	background: lightgrey;
+}

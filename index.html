@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jogo da velha</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<!-- Placar -->
+	<div id="placar">
+		<div id="player1" class="placarbox">
+			<p id="pontos1">Player 1: 0</p>
+		</div>
+		<div id="information" class="placarbox">
+			<p id="txt">
+				
+			</p>
+		</div>
+		<div id="player2" class="placarbox">
+			<p id="pontos2">Player 2: </p>
+		</div>
+		<div id="btn_finish" class="placarbox" onclick="game.finishedUp()" style="display: none;">
+			<p>Finalizar partida</p>
+		</div>
+	</div>
+	
+	<!-- menu -->
+	<div id="menu">
+		<h2>Menu</h2>	
+		<div id="level1" class="levelbox" onclick="ia.dificult(1)"><p>Level 1</p></div>
+		<div id="level2" class="levelbox" onclick="ia.dificult(2)"><p>Level 2</p></div>
+		<div id="level3" class="levelbox" onclick="ia.dificult(3)"><p>Level 3</p></div>
+		<div id="reiniciar" onclick="game.reiniciar();"><p>Reiniciar</p></div>
+		<div id="desistir" onclick="game.dis();"><p>Desistir</p></div>
+	</div>
+	
+	<!-- Tabuleiro -->
+	<div id="tabuleiro">
+		<div id="tile1" onclick="played(1, 1)"></div>
+		<div id="tile2" onclick="played(2, 1)"></div>
+		<div id="tile3" onclick="played(3, 1)"></div>
+		<div id="tile4" onclick="played(4, 1)"></div>
+		<div id="tile5" onclick="played(5, 1)"></div>
+		<div id="tile6" onclick="played(6, 1)"></div>
+		<div id="tile7" onclick="played(7, 1)"></div>
+		<div id="tile8" onclick="played(8, 1)"></div>
+		<div id="tile9" onclick="played(9, 1)"></div>
+	</div>
+
+	</body>
+	<script src="script.js"></script>
+</html>
