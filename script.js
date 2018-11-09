@@ -232,7 +232,7 @@ function run(){
 	console.log('*Função run()');
 
 	document.getElementById('level'+ia.dificuldade).style='background: lightgrey; color: white;';
-	document.getElementById('level'+ia.dificuldade).innerHTML= '<p>>>LEVEL 2<<<p>';
+	document.getElementById('level'+ia.dificuldade).innerHTML= '<p>>>LEVEL '+ia.dificuldade+' <<<p>';
 
 	var inicio = Math.floor(Math.random()*10);
 	if(inicio%2==0){
